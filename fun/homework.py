@@ -39,4 +39,3 @@ def longest_value_key(incoming_dict):
             maxKey = key
             currentMaxValue = len(value)
     return (maxKey)
-
