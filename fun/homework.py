@@ -32,4 +32,11 @@ def longest_value_key(incoming_dict):
     Find the KEY that has a value with the highest length, use the len() function
     """
 
-    return len(incoming_dict)
+    currentMaxValue = 0
+    maxKey = None
+    for key, value in incoming_dict.items():
+        if len(value) > currentMaxValue:
+            maxKey = key
+            currentMaxValue = len(value)
+    return(maxKey)
+
