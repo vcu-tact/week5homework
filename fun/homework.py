@@ -22,8 +22,7 @@ def add_list_numbers(incoming_list):
     Required parameter, incoming_list, should be a list.
     Add all the values together and return it.
     """
-    if incoming_list is None:
-        return "Argument passed was not a list!"
+    
     return sum(incoming_list)
 
 
@@ -32,9 +31,7 @@ def longest_value_key(incoming_dict):
     Required parameter, incoming_dict, should be a dict.
     Find the KEY that has a value with the highest length, use the len() function
     """
-    if incoming_dict is None:
-        return "Argument passed was not a dict!"
-
+    
     currentMaxValue = 0
     maxKey = None
     for key,value in incoming_dict.items():
